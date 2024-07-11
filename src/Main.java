@@ -1,17 +1,26 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Mentoria;
+
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Curso curso = new Curso();
+        curso.setTitulo("Java");
+        curso.setCargaHoraria(40);
+        curso.setDescricao("Java POO");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        Curso curso1 = new Curso();
+        curso1.setTitulo("Javascrpt");
+        curso1.setCargaHoraria(10);
+        curso1.setDescricao("Javascrpt vanilha");
+
+        Mentoria mentoria = new Mentoria();
+        mentoria.setTitulo("Mentoria bootcamp");
+        mentoria.setDescricao("descrição mentoria");
+        mentoria.setData(LocalDate.now());
+
+        System.out.println(curso);
     }
 }
